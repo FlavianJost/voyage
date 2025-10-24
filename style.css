@@ -74,6 +74,37 @@ body {
     border-radius: 15px;
 }
 
+iframe{
+  width: 40em;
+  height: 20em;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  max-width: 100%;          /* 🔒 empêche les champs de dépasser */
+  box-sizing: border-box;   /* 🔒 inclut padding dans la largeur */
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 0.0625em solid #ccc;
+
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+}
+
+button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.3125em;
+  background-color: #0077b5;
+  color: white;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #e0e0e0;
   position: relative;
@@ -81,4 +112,29 @@ body {
   text-align: center;
   border-top: 0.125em solid #ccc;
   margin-top: 2em;
+}
+
+@media (max-width: 600px) {
+    iframe{
+        width: 20em;
+        height: 10em;
+    }
+    .main-content img{
+        width: 30em;
+    }
+}
+
+@media (max-width: 478px) {
+    iframe{
+        width: 20em;
+        height: 10em;
+    }
+    .main-content img{
+        width: 20em;
+    }
+    .footer {
+        position: relative;
+        margin-top: 5em;
+        bottom: 1;
+    }
 }

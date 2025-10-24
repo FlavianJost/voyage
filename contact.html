@@ -14,7 +14,26 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <h1>Ma passion : Les voyages</h1>
+    <main class="main-content">
+        <h1>Ma passion : Les voyages</h1>
+        <section class="form-box">
+            <h3>Contactez-moi</h3>
+            <form method="POST" action="contact.php">
+                <input type="text" name="nom" placeholder="Nom" required>
+                <input type="text" name="prenom" placeholder="Prénom" required>
+                <input type="email" name="email" placeholder="Adresse mail" required>
+                <textarea placeholder="Votre message" name="message" rows="5"></textarea>
+                <div class="buttons">
+                    <button type="submit">Valider</button>
+                    <button type="reset">Effacer</button>
+                </div>
+            </form>
+        </section>
+        <br>
+        <p>Email de reservation : <a href="mailto:reservations@pearlresorts.com">reservations@pearlresorts.com</a></p>
+        <p>Instagram de l'hotel : <a href="https://www.instagram.com/leboraborabypearlresorts/#" target="_blank">@leboraborabypearlresorts</a></p>
+        <p>Le site de l'hotel : <a href="https://www.leborabora.com/fr-fr/" target="_blank">Bora Bora by Pearl Resort</a></p>
+    </main>
     <footer class="footer"><p>© Flavian Jost 2025</p></footer>
 </body>
 </html>
